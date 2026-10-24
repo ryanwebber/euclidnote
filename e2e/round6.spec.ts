@@ -58,13 +58,19 @@ test.describe('popups dim the app', () => {
 })
 
 test.describe('the first group’s grip', () => {
-  test('stays clear of the column controls', async ({ page }) => {
-    await open(page, 'title: G\ncolumns: [1fr, 1fr]\ngroups:\n  - at: [0, 0]\n    rows:\n      - [a, b]\n')
+  test('sits across its top edge like every other group’s, clear of the column controls', async ({ page }) => {
+    await open(page, 'title: G\ncolumns: [1fr, 1fr]\ngroups:\n  - at: [0, 0]\n    rows:\n      - [a, b]\n  - at: [0, 2]\n    rows:\n      - [c, d]\n')
     await edit(page)
     await settled(page)
-    const grip = (await tid(page, 'group-grip-0').locator('.pill').boundingBox())!
-    const ruler = (await tid(page, 'ruler').boundingBox())!
-    expect(grip.y).toBeGreaterThanOrEqual(ruler.y + ruler.height - 1)
+    const pill = async (i: number) => (await tid(page, `group-grip-${i}`).locator('.pill').boundingBox())!
+    const top = async (id: string) => (await tid(page, id).boundingBox())!.y
+    const first = await pill(0)
+    const other = await pill(1)
+    // the same place relative to the group's top edge as a group lower down
+    expect(Math.abs(first.y - (await top('cell-0-0')) - (other.y - (await top('cell-0-2'))))).toBeLessThan(1.5)
+    // and not on top of the column chips
+    const tab = (await tid(page, 'col-tab-0').boundingBox())!
+    expect(first.y).toBeGreaterThanOrEqual(tab.y + tab.height)
   })
 })
 

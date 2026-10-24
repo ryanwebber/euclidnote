@@ -45,7 +45,7 @@
   --dock-gap: 12px;
   --dock-zone: calc(var(--dock-h) + var(--dock-gap) * 2 + env(safe-area-inset-bottom));
   --topbar-h: 54px;
-  --ruler-h: 52px;
+  --ruler-h: 60px;
   --tab-h: 28px;
   --card-shadow: 0 0 0 1px rgba(24, 24, 28, 0.06), 0 2px 3px rgba(24, 24, 28, 0.04), 0 14px 26px -16px rgba(24, 24, 28, 0.22);
   --tile-shadow: 0 0 0 1px rgba(24, 24, 28, 0.06), 0 8px 14px -10px rgba(24, 24, 28, 0.28);
@@ -753,7 +753,7 @@ button:disabled { opacity: 0.35; cursor: default; }
 
 /* Landscape phones: every pixel of height is a row of cells, so the chrome shrinks. */
 @media (max-height: 520px) {
-  :root { --topbar-h: 40px; --ruler-h: 36px; --tab-h: 24px; --dock-h: 48px; --dock-gap: 8px; }
+  :root { --topbar-h: 40px; --ruler-h: 50px; --tab-h: 24px; --dock-h: 48px; --dock-gap: 8px; }
   .topbar { padding-top: 2px; }
   .topbar h1, .title-input { font-size: 26px; }
   .dock .tool { height: 42px; }
@@ -1064,8 +1064,7 @@ button:disabled { opacity: 0.35; cursor: default; }
 .app[data-wide='true'] .topbar { height: 84px; padding: 28px 28px 12px; }
 .shell .side-head { height: 84px; padding: 28px 12px 12px 24px; }
 
-/* A group at the top of the page keeps its grip inside its corner, clear of the column controls. */
-.gframe[data-top='true'] .handle[data-kind='grip'], .sel[data-top='true'] .handle[data-kind='grip'] { top: 6px; left: 8px; }
+/* The band above the first row is tall enough that a group's grip, which sits across its top edge, stays clear of the column controls. */
 
 /* A dimmed backdrop behind sheets and menus, below the dock so the tools stay bright */
 .pop-scrim { position: fixed; inset: 0; z-index: 15; pointer-events: none; background: rgba(24, 24, 28, 0.32); animation: fade 0.18s ease; }
