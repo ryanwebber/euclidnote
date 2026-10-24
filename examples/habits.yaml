@@ -1,0 +1,25 @@
+title: This week
+columns: [1fr]
+cells:
+  - {at: [0, 0], text: Habits, bold: true, size: large, font: display, icon: fire}
+  - {at: [0, 4], text: Today, bold: true, size: large, font: display, icon: sun}
+groups:
+  - at: [0, 1]
+    variant: card
+    fill: lime
+    rows:
+      - [{habit: [1, 1, 0, 1, 1, 0, 0], label: Run}]
+      - [{habit: [1, 1, 1, 1, 0, 0, 0], label: Read}]
+      - [{habit: [0, 1, 0, 1, 0, 0, 0], label: Stretch}]
+  - at: [0, 5]
+    variant: stripe
+    fill: yellow
+    rows:
+      - [{mood: 4, label: Mood}]
+      - [{pips: 3, max: 5, label: Workouts}]
+      - [{number: 7.5, unit: h, label: Sleep}]
+  - at: [0, 8]
+    variant: card
+    fill: indigo
+    rows:
+      - [{bars: [4, 6, 3, 7, 5, 8, 2], max: 10, axis: week, label: Energy}]

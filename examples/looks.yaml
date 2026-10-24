@@ -1,0 +1,21 @@
+# One small group in each look, so a change to any of them shows up here.
+title: Looks
+columns: [1fr, 1fr]
+cells:
+  - {at: [0, 0], span: 2, text: Card, bold: true}
+  - {at: [0, 3], span: 2, text: Table, bold: true}
+  - {at: [0, 6], span: 2, text: Header, bold: true}
+  - {at: [0, 10], span: 2, text: Sidebar, bold: true}
+  - {at: [0, 14], span: 2, text: Stripe, bold: true}
+  - {at: [0, 17], span: 2, text: Stack, bold: true}
+  - {at: [0, 20], span: 2, text: Tiles, bold: true}
+  - {at: [0, 23], span: 2, text: Outline, bold: true}
+groups:
+  - {at: [0, 1], variant: card, fill: yellow, rows: [[Driver, "250"], [7 iron, "150"]]}
+  - {at: [0, 4], variant: table, fill: sand, rows: [[Driver, "250"], [7 iron, "150"]]}
+  - {at: [0, 7], variant: header, fill: green, rows: [[Club, Carry], [Driver, "250"], [7 iron, "150"]]}
+  - {at: [0, 11], variant: sidebar, fill: blue, rows: [[Driver, "250"], [7 iron, "150"], [PW, "120"]]}
+  - {at: [0, 15], variant: stripe, fill: pink, rows: [[Driver, "250"], [7 iron, "150"]]}
+  - {at: [0, 18], variant: stack, fill: indigo, rows: [[Driver, "250"], [7 iron, "150"]]}
+  - {at: [0, 21], variant: tiles, fill: orange, rows: [[Driver, "250"]]}
+  - {at: [0, 24], variant: outline, rows: [[Driver, "250"], [7 iron, "150"]]}

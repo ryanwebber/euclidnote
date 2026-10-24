@@ -1,0 +1,22 @@
+title: Yardages
+columns: [2fr, 1fr, 1fr]
+groups:
+  - at: [0, 0]
+    variant: header
+    fill: green
+    rows:
+      - [Club, {text: Carry, align: right}, {text: Total, align: right}]
+      - [{text: Driver, bold: true}, {number: 250, align: right}, {number: 275, align: right}]
+      - [{text: 3 wood, bold: true}, {number: 225, align: right}, {number: 245, align: right}]
+      - [{text: 5 iron, bold: true}, {number: 175, align: right}, {number: 184, align: right}]
+      - [{text: 7 iron, bold: true}, {number: 150, align: right}, {number: 158, align: right}]
+      - [{text: 9 iron, bold: true}, {number: 130, align: right}, {number: 136, align: right}]
+      - [{text: PW, bold: true}, {number: 120, align: right}, {number: 126, align: right}]
+  - at: [0, 7]
+    variant: tiles
+    rows:
+      - [{number: 292, unit: yd, label: Longest drive, fill: yellow}, {counter: 0, label: Birdies, span: 2, fill: lime}]
+  - at: [0, 8]
+    variant: plain
+    rows:
+      - [{bars: [4, 6, 3, 7, 5, 8, 2], max: 10, axis: week, label: Range sessions, span: 3, fill: sand}]

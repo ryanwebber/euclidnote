@@ -1,0 +1,18 @@
+title: More widgets
+columns: [1fr, 1fr]
+cells:
+  - {at: [0, 0], span: 2, text: More, bold: true, size: title, font: display, icon: rocket}
+groups:
+  - at: [0, 1]
+    variant: tiles
+    rows:
+      - [{pips: 2, max: 4, label: Sets, fill: sand}, {time: "07:30", label: Alarm, fill: yellow}]
+      - [{timer: 0, from: 90000, label: Rest, fill: indigo}, {badge: rocket, label: Launch, fill: pink}]
+      - [{bars: [2, 4, 3, 6, 5, 8, 3], max: 10, axis: week, label: Steps, span: 2, fill: lime}]
+      - [{rating: 3, symbol: heart, label: Love, fill: red}, {number: 12.5, prefix: $, label: Spend, fill: teal}]
+  - at: [0, 6]
+    variant: card
+    fill: blue
+    rows:
+      - [{check: true, text: Square boxes, shape: square, icon: check}, {link: example.com/menu, text: Open the menu}]
+      - [{check: false, text: Round boxes}, {toggle: true, text: Wi-Fi, icon: wifi}]

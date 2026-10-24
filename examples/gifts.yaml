@@ -1,0 +1,24 @@
+# A heading between two groups that share a pattern: groups do not have to be
+# contiguous, and loose cells (here the headings) can sit between them.
+title: Gifts
+columns: [1fr, 1fr]
+cells:
+  - {at: [0, 0], span: 2, text: Mom, bold: true, size: large, font: display, icon: heart}
+  - {at: [0, 3], span: 2, text: Dad, bold: true, size: large, font: display, icon: star}
+groups:
+  - at: [0, 1]
+    variant: stack
+    fill: pink
+    rows:
+      - [{text: Scarf, bold: true}, {tag: Ordered, options: [Idea, Ordered, Wrapped]}]
+      - [{text: Book, bold: true}, {tag: Idea, options: [Idea, Ordered, Wrapped]}]
+  - at: [0, 4]
+    variant: stack
+    fill: blue
+    rows:
+      - [{text: Tie, bold: true}, {tag: Wrapped, options: [Idea, Ordered, Wrapped]}]
+      - [{text: Wallet, bold: true}, {tag: Idea, options: [Idea, Ordered, Wrapped]}]
+  - at: [0, 6]
+    variant: tiles
+    rows:
+      - [{number: 250, prefix: $, label: Budget, fill: sand}, {pips: 2, max: 4, label: Done, fill: yellow}]

@@ -1,0 +1,21 @@
+title: Groceries
+columns: [3fr, 1fr]
+cells:
+  - {at: [0, 0], span: 2, progress: 40, label: In the basket, fill: yellow}
+  - {at: [0, 1], span: 2, text: Produce, bold: true, size: large, font: display, icon: fork}
+  - {at: [0, 6], span: 2, text: Dairy, bold: true, size: large, font: display, icon: drop, color: blue}
+groups:
+  - at: [0, 2]
+    variant: card
+    fill: lime
+    rows:
+      - [{check: true, text: Bananas}, {text: "6", align: right, color: gray}]
+      - [{check: false, text: Spinach}, {text: 1 bag, align: right, color: gray}]
+      - [{check: false, text: Lemons}, {text: "3", align: right, color: gray}]
+      - [{check: false, text: Avocados}, {text: "4", align: right, color: gray}]
+  - at: [0, 7]
+    variant: card
+    fill: blue
+    rows:
+      - [{check: false, text: Milk}, {text: 1 gal, align: right}]
+      - [{check: true, text: Eggs}, {text: "12", align: right}]

@@ -1,0 +1,33 @@
+# A right-flow note: scrolls sideways, smoothly. Five rows divide the screen height; each day is
+# its own card, two columns wide (a time, then what happens). Duplicate a day with its edge dots.
+title: Lisbon
+flow: right
+columns: [1fr, 1.5fr, 1fr, 1.5fr, 1fr, 1.5fr]
+groups:
+  - at: [0, 0]
+    variant: header
+    fill: yellow
+    rows:
+      - [{text: Fri 12, span: 2, font: display, size: large, icon: calendar}]
+      - [{time: "09:15", align: center}, {text: Flight to LIS, icon: plane}]
+      - [{time: "13:30", align: center}, {text: Check in, icon: bed}]
+      - [{time: "16:00", align: center}, {text: Belém tower, icon: flag}]
+      - [{time: "19:30", align: center}, {text: Dinner at Time Out, icon: fork}]
+  - at: [2, 0]
+    variant: header
+    fill: pink
+    rows:
+      - [{text: Sat 13, span: 2, font: display, size: large, icon: calendar}]
+      - [{time: "10:00", align: center}, {text: Pastéis de Belém, icon: coffee}]
+      - [{time: "12:30", align: center}, {text: Alfama walk, icon: map}]
+      - [{time: "15:00", align: center}, {text: Tram 28, icon: ticket}]
+      - [{time: "21:00", align: center}, {text: Fado night, icon: music}]
+  - at: [4, 0]
+    variant: header
+    fill: green
+    rows:
+      - [{text: Sun 14, span: 2, font: display, size: large, icon: calendar}]
+      - [{time: "08:30", align: center}, {text: Train to Sintra, icon: ticket}]
+      - [{time: "10:30", align: center}, {text: Pena Palace, icon: mountain}]
+      - [{time: "14:00", align: center}, {text: Lunch, icon: fork}]
+      - [{time: "19:00", align: center}, {text: Back in Lisbon, icon: home}]

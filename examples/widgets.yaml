@@ -1,0 +1,20 @@
+title: Widget tour
+columns: [1fr, 1fr]
+cells:
+  - {at: [0, 0], span: 2, text: Widgets, bold: true, size: title, font: display, icon: bolt}
+groups:
+  - at: [0, 1]
+    variant: tiles
+    rows:
+      - [{counter: 4, goal: 12, label: Sets, fill: yellow}, {timer: 90000, label: Rest, fill: indigo}]
+      - [{rating: 4, label: Taste, fill: pink}, {mood: 4, label: Today, fill: green}]
+      - [{progress: 62, label: Goal, fill: blue}, {progress: 40, shape: ring, label: Saved, fill: orange}]
+      - [{habit: [1, 1, 0, 1, 0, 0, 0], label: Run, span: 2, fill: lime}]
+      - [{number: 72.4, unit: kg, label: Weight, fill: sand}, {countdown: 2026-12-25, label: Xmas, fill: red}]
+      - [{date: 2026-10-30, label: Due, fill: teal}, {tag: Doing, fill: ink}]
+  - at: [0, 7]
+    variant: card
+    fill: purple
+    rows:
+      - [{check: true, text: Book flights, icon: plane}, {toggle: true, text: Wi-Fi}]
+      - [{check: false, text: Pack bags, icon: bed}, {toggle: false, text: Alarm}]

@@ -1,0 +1,18 @@
+title: Leg day
+columns: [2fr, 1fr, 1fr]
+cells:
+  - {at: [0, 0], span: 3, text: Today's session, bold: true, size: title, font: display, icon: dumbbell}
+  - {at: [0, 5], span: 3, bars: [3, 5, 4, 6, 5, 7, 4], max: 8, axis: week, label: Sets this week, fill: sand}
+groups:
+  - at: [0, 1]
+    variant: stack
+    fill: yellow
+    rows:
+      - [{text: Squat, bold: true, font: display, size: large}, {counter: 0, label: Reps, goal: 10}, {timer: 0, from: 90000, label: Rest}]
+      - [{text: Lunge, bold: true, font: display, size: large}, {counter: 0, label: Reps, goal: 10}, {timer: 0, from: 90000, label: Rest}]
+      - [{text: Calf raise, bold: true, font: display, size: large}, {counter: 0, label: Reps, goal: 15}, {timer: 0, from: 60000, label: Rest}]
+  - at: [0, 4]
+    variant: stripe
+    fill: indigo
+    rows:
+      - [{rating: 0, label: Effort, span: 2}, {mood: 0, label: Feel}]
